@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решенные проблемы и новости</title>
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="./img/logo.png" alt="Логотип города">
+            </div>
+            
+            <!-- Иконка пользователя для входа -->
+            <div class="user-icon">
+                <a href="./php/index.php">
+                    <img src="./img/chel.png" alt="Войти">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="button-container">
+        <a href="./php/index.php" class="custom-button">
+            <span class="plus-icon">+</span>
+            <span class="text">Создайте заявку</span>
+        </a>
+    </div>
+    <!-- Блок новостей -->
+    <div class="container news-container">
+        <h2>Новости</h2>
+        <div class="news-grid">
+            <!-- Новость 1 -->
+            <div class="news-item">
+                <img src="./img/park.jpg" alt="Новость 1">
+                <h3>Открытие нового парка</h3>
+                <p>15 сентября 2024 года состоялось торжественное открытие нового городского парка с зонами для отдыха и спорта.</p>
+            </div>
+
+            <!-- Новость 2 -->
+            <div class="news-item">
+                <img src="./img/svet.jpeg" alt="Новость 2">
+                <h3>Модернизация городского освещения</h3>
+                <p>Город начал работу по замене устаревших ламп на современные светодиодные осветительные приборы для экономии энергии.</p>
+            </div>
+
+            <!-- Новость 3 -->
+            <div class="news-item">
+                <img src="./img/doroga.jpg" alt="Новость 3">
+                <h3>Строительство новой дороги</h3>
+                <p>Начались строительные работы по созданию новой трассы, которая соединит северные и южные районы города.</p>
+            </div>
+
+            <!-- Новость 4 -->
+            <div class="news-item">
+                <img src="./img/avrob.jfif" alt="Новость 4">
+                <h3>Запуск нового автобусного маршрута</h3>
+                <p>С 20 сентября 2024 года запускается новый автобусный маршрут, который улучшит транспортное сообщение между районами.</p>
+            </div>
+        </div>
+    </div>
+  
+
+
+
+
+
+
+    <div class="container">
+        <h2>Решенные проблемы</h2>
+       
+        
+        <div class="grid">
+            <div class="large problem-block">
+                <div class="image-container">
+                    <img src="./img/god doroga.jpeg" class="after-photo" alt="Фото после">
+                    <img src="./img/plox.jpg" class="before-photo" alt="Фото до">
+                </div>
+                <div class="problem-info">
+                    <p><strong>Временная метка:</strong> 21.09.2024</p>
+                    <p><strong>Название:</strong> Проблема с дорогой</p>
+                    <p><strong>Категория:</strong> Дорожные работы</p>
+                </div>
+            </div>
+    
+            <div class="small problem-block">
+                <div class="image-container">
+                    <img src="./img/godsvet.jpg" class="after-photo" alt="Фото после">
+                    <img src="./img/ploxsvet.jpg" class="before-photo" alt="Фото до">
+                </div>
+                <div class="problem-info">
+                    <p><strong>Временная метка:</strong> 19.09.2024</p>
+                    <p><strong>Название:</strong> Проблема с освещением</p>
+                    <p><strong>Категория:</strong> Уличное освещение</p>
+                </div>
+            </div>
+    
+            <div class="small problem-block">
+                <div class="image-container">
+                    <img src="./img/mysornorm.jfif" class="after-photo" alt="Фото после">
+                    <img src="./img/mysor.jpg" class="before-photo" alt="Фото до">
+                </div>
+                <div class="problem-info">
+                    <p><strong>Временная метка:</strong> 18.09.2024</p>
+                    <p><strong>Название:</strong> Проблема с мусором</p>
+                    <p><strong>Категория:</strong> Уборка мусора</p>
+                </div>
+            </div>
+    
+            <div class="large problem-block">
+                <div class="image-container">
+                    <img src="./img/zel.jpg" class="after-photo" alt="Фото после">
+                    <img src="./img/nozel.png" class="before-photo" alt="Фото до">
+                </div>
+                <div class="problem-info">
+                    <p><strong>Временная метка:</strong> 15.09.2024</p>
+                    <p><strong>Название:</strong> Проблема с озеленением</p>
+                    <p><strong>Категория:</strong> Благоустройство</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    <footer>
+        Сайт разработан в учебных целях
+    </footer>
+
+
+
+    
+    <div class="counter">
+        Количество решенных заявок: <span id="resolvedCount">0</span>
+    </div>
+    
+</body>
+</html>
+
+<style>
+  
+  .counter {
+            position: fixed;
+            bottom: 20px;
+            right: 20px; /* Перемещение счетчика в правую часть */
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+            z-index: 1000; /* Чтобы счетчик был поверх других элементов */
+        }
+
+        @media (max-width: 600px) {
+            .counter {
+                font-size: 14px; /* Уменьшение размера текста на мобильных устройствах */
+                padding: 8px 10px;
+            }
+        }
+</style>
+
+<script>
+    function updateResolvedCount() {
+        fetch('./php/get_count.php')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('resolvedCount').innerText = data.count;
+            })
+            .catch(error => console.error('Ошибка:', error));
+    }
+
+    setInterval(updateResolvedCount, 5000); // Обновление каждые 5 секунд
+    updateResolvedCount(); // Первичное обновление при загрузке
+</script>
